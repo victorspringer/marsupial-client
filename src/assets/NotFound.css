@@ -1,0 +1,10 @@
+.not-found-title {
+    text-align: center;
+    font-size: 48px;
+}
+
+.not-found-image {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}

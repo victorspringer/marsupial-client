@@ -1,0 +1,51 @@
+.code-diff-title {
+    text-align: right;
+    display: table;
+    height: 77px;
+}
+
+.code-diff-title h2 {
+    font-weight: normal;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.editor-options {
+    margin: 0;
+}
+
+.ace_editor, .code-diff {
+    width: 100% !important;
+    height: 500px !important;
+    overflow: auto;
+    display: inline-block;
+    vertical-align: top;
+    font-family: monospace, monospace;
+}
+
+.ace_editor {
+    border: 1px solid #d9d9d9;
+}
+
+.ace_autocomplete {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 600px !important;
+    max-height: 250px !important;
+}
+
+.code-diff td {
+    font-size: 14px;
+    padding: 2px;
+    border-radius: 0;
+}
+
+.code-diff pre {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .code-diff-title {
+        display: none;
+    }
+}

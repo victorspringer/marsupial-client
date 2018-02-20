@@ -1,0 +1,38 @@
+.ReactTable {
+    background-color: #ffffff;
+    margin-top: 15px;
+    font-weight: 300;
+}
+
+.rt-tr:hover:not(.-padRow) {
+    cursor: pointer;
+}
+
+.rt-tr {
+    text-align: center;
+}
+
+.ReactTable select {
+    display: inline-block;
+}
+
+.ReactTable .rt-thead.-filters input, .ReactTable .rt-thead.-filters select {
+    margin: 0;
+    margin-top: 2px;
+    height: 22px;
+    width: 94% !important;
+}
+
+.ReactTable .-pagination {
+    height: 46px;
+}
+
+.ReactTable .-pagination input, .ReactTable .-pagination select {
+    margin: 0;
+    padding: 0;
+    height: 36px;
+}
+
+.ReactTable .-pagination .-previous, .ReactTable .-pagination .-next {
+    height: 36px;
+}

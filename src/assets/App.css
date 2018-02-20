@@ -1,0 +1,75 @@
+body {
+    background-color: #f9fafc;
+}
+
+nav {
+    background-color: #356272;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.brand-logo {
+    top: 4px;
+    width: 56px;
+}
+
+span.brand-name {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.logout {
+    transform: rotate(180deg);
+}
+
+.app-body {
+    padding: 0 15px;
+}
+
+.app-body-card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 8px #d8dbe3;
+    -moz-box-shadow: 0 0 8px #d8dbe3;
+    box-shadow: 0 0 8px #d8dbe3;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.login-card {
+    max-width: 300px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.page-header {
+    margin: 0;
+}
+
+.right {
+    float: right;
+}
+
+@media only screen and (max-width: 992px) {
+    .brand-logo {
+        top: 0;
+    }
+    
+    span.brand-name {
+        display: none;
+    }
+}
