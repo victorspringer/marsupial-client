@@ -46,7 +46,8 @@ class Scripts extends Component {
         </Row>
         <ReactTable
           filterable
-          loading={ this.props.scriptsData.isFetching }
+          loading={ false }
+          noDataText=''
           className='-highlight'
           data={ scripts }
           columns={ columns }

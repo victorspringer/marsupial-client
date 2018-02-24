@@ -36,3 +36,7 @@
 .ReactTable .-pagination .-previous, .ReactTable .-pagination .-next {
     height: 36px;
 }
+
+.rt-noData {
+    display: none !important;
+}
