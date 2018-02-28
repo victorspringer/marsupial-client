@@ -53,7 +53,7 @@ export const savedScript = (script) => {
 export const getScripts = () => {
   return dispatch => {
     dispatch(loadingScripts());
-    return fetch('http://localhost:8080/list-scripts')
+    return fetch('http://0.0.0.0:8080/list-scripts')
       .then(response => {
         if (response.status >= 400) {
           return [];
@@ -69,7 +69,7 @@ export const getScripts = () => {
 export const getScript = (id) => {
   return dispatch => {
     dispatch(loadingScript());
-    return fetch(`http://localhost:8080/get-script/${id}`)
+    return fetch(`http://0.0.0.0:8080/get-script/${id}`)
       .then(response => {
         if (response.status >= 400) {
           return [];
@@ -85,7 +85,7 @@ export const getScript = (id) => {
 export const getScriptVersion = (id, version) => {
   return dispatch => {
     dispatch(loadingScriptVersion());
-    return fetch(`http://localhost:8080/get-script-version/${id}/${version}`)
+    return fetch(`http://0.0.0.0:8080/get-script-version/${id}/${version}`)
       .then(response => {
         if (response.status >= 400) {
           return {};
@@ -101,7 +101,7 @@ export const getScriptVersion = (id, version) => {
 export const saveScript = (script) => {
   return dispatch => {
     dispatch(savingScript());
-    return fetch('http://localhost:8080/insert-script', {
+    return fetch('http://0.0.0.0:8080/insert-script', {
         method: 'post',
         headers: {
           'Accept': 'application/json',
