@@ -56,7 +56,7 @@ class EditScript extends Component {
     this.state = {
       pageType: 'edit',
       code: '',
-      mode: 'python',
+      mode: 'javascript',
       theme: 'textmate',
       filepath: '',
       region: ''

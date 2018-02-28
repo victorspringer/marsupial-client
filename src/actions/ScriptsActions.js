@@ -122,7 +122,8 @@ export const saveScript = (script) => {
             response.error.includes('NoSuchBucket') ||
             response.error.includes('PermanentRedirect') ||
             response.error.includes('BucketNotEmpty') ||
-            response.error.includes('IllegalLocationConstraintException')
+            response.error.includes('IllegalLocationConstraintException') ||
+            response.error.includes('MalformedXML')
           ) {
             return {
               error: 'Invalid S3 file path.'
